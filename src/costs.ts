@@ -63,6 +63,6 @@ interface IPrice {
 export interface IProductPrice extends IPrice {
   cost: ICostInEUR;
   tax: ICostInEUR;
-  fee: ICostInEUR;
-  serviceCharge: ICostInEUR;
+  specialFee?: ICostInEUR;
+  serviceFee?: ICostInEUR;
 }
