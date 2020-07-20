@@ -4,8 +4,7 @@
 
 - Why you should always state what a value is
 - Why you should never infer a unit
-- 3
 
 ## Notes
 
-Some notes
+We had a bit of a problem at work...
