@@ -54,3 +54,15 @@ export function getSavingsV3(
     currency: newCost.currency,
   };
 }
+
+interface IPrice {
+  [key: string]: ICostWithCurrency;
+}
+
+// When dealing with prices it is a good idea to segment the price
+export interface IProductPrice extends IPrice {
+  cost: ICostInEUR;
+  tax: ICostInEUR;
+  fee: ICostInEUR;
+  serviceCharge: ICostInEUR;
+}
